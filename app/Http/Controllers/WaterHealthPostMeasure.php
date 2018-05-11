@@ -9,6 +9,8 @@ class WaterHealthPostMeasure extends Controller
 {
     public function index()
     {
-        dd(Input::get('measure'));
+        return [
+          'measure' => Input::get('measure')
+        ];
     }
 }
