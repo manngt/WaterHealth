@@ -18,3 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::resource('watermeasure','WaterMeasureController');
+Route::resource('postwatermeasure','WaterHealthPostMeasure');
