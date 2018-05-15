@@ -40,4 +40,13 @@ class WaterMeasureController extends Controller
             'message' => $message
         ];
     }
+
+    public function show($id)
+    {
+        $water_measures = WaterMeasure::find($id);
+
+        return [
+            'measures' => $water_measures
+        ];
+    }
 }

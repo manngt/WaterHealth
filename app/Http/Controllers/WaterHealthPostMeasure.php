@@ -14,6 +14,7 @@ class WaterHealthPostMeasure extends Controller
         $water_measure = new WaterMeasure();
         $water_measure->measure = Input::get('measure');
         $water_measure->save();
+        
         return [
           'message' => 'OK'
         ];
