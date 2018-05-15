@@ -13,7 +13,7 @@ class WaterHealthPostMeasure extends Controller
 
         $water_measure = new WaterMeasure();
         $water_measure->measure = Input::get('measure');
-        $water_measure->serial_numer = Input::get('serial_number');
+        $water_measure->serial_number = Input::get('serial_number');
         $water_measure->save();
 
         return [
