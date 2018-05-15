@@ -43,7 +43,7 @@ class WaterMeasureController extends Controller
 
     public function show($id)
     {
-        $water_measures = WaterMeasure::find($id);
+        $water_measures = WaterMeasure::where('serial_number',$id)->get();
 
         return [
             'measures' => $water_measures
